@@ -1,0 +1,8 @@
+ul {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-around;
+}
+.button {
+    background-color: gray;
+}
