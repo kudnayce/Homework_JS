@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание №1</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+
+<p> Задача №1 </p>
+<form name="forma_z1" >
+    <div>
+    Площадь участка (сот): <input type="text" name="ploshad_uchastka" required>
+    Длина грядок: <input type="text" name="dlina" required>
+    Высота грядок: <input type="text" name="visota" required> <br><br>
+    </div>
+    <div class="margin_10">
+        Посчитать: <input type="button" value="RESULT" onclick="result_one();" style="background-color: green">
+        Метров не занято: <input type="text" name="quest_one" disabled >
+    </div>
+</form>
+<br>
+
+<p> Задача №2 </p>
+<form name="forma_z2" >
+    <div>
+        Овал (дм): <input type="text" name="oval" required>
+        Вырезанный Овал (см) : <input type="text" name="vyrezanniy_oval" required>
+
+    </div>
+    <div class="margin_10">
+        Посчитать: <input type="button" value="RESULT" onclick="result_two();" style="background-color: green">
+         <input type="text" name="quest_two" disabled >
+    </div>
+</form>
+<br>
+<br>
+<br>
+
+<p> Задача №3</p>
+
+<form name="forma_z_3">
+    <div style="display: flex; justify-content: center">
+        Число 1:<input type="text" name="ch_1">
+        Число 2:<input type="text" name="ch_2">
+        Число 3:<input type="text" name="ch_3">
+    </div>
+
+    <div style="display: flex; justify-content: center; margin:10px" >
+        <input type="button" value="MAX" onclick="max_ch();" style="background-color: green">
+        <input type="button" value="MIN" onclick="min_ch();" style="background-color: green">
+    </div>
+
+    <div class="margin_10">
+         <input type="text" name="quest_3" disabled >
+    </div>
+</form>
+<br>
+<br>
+
+<p>Задача 4</p>
+<form name="forma_z_4">
+    <div style="display: flex; justify-content: center">
+        Граница:<input type="text" id="granica">
+        Число 2:<input type="text" id="ch_2">
+        Число 3:<input type="text" id="ch_3">
+    </div>
+
+    <div style="display: flex; justify-content: center; margin:10px" >
+       <input type="button" value="Расчитать" onclick="result_four();" style="background-color: green">
+    </div>
+
+    <div class="margin_10">
+        <input type="text" id="quest_4" disabled >
+    </div>
+</form>
+
+</body>
+</html>
