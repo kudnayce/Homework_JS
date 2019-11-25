@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script src="script.js"></script>
+<pre>
+	1. Дана строка, изображающая целое число. Вывести сумму цифр этого числа.
+</pre>
+<input type="text" id="artikl" pattern="^[ 0-9]+$">
+<input type="submit" value="Результат" onclick="task_1()">
+
+<br><br>
+<pre>
+	2. Дана строка и символ. Удвоить каждое вхождение заданного символа в строку.
+</pre>
+Строка: <input type="text" id="str">
+Символ в строке: <input type="text" id="symbol" maxlength="1">
+<input type="submit" value="Результат" onclick="task_2()">
+<br><br>
+
+<pre>
+	3. Проверить что введенный пароль удовлетворяет
+	следующим условиям сложности:
+	- длинна от 9 символов;
+	- содержит обязательно английские буквы верхнего и нижнего регистра;
+	- содержит более двух цифр;
+	- содержит обязательно один из неалфавитных символов (например, !, $, #, %).
+</pre>
+
+password <input type="text" id="password" maxlength="99999">
+<input type="button" value="Проверить пароль" onclick="task_3()">
+
+
+<p> </p>
+</body>
+</html>
