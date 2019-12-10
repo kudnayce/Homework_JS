@@ -26,9 +26,12 @@ function result_task_1() {
 
 let present_tabs = [];
 let win_prize;
+let kolvo_try = 3;
 
 function result_4() {
-
+	kolvo_try = 3;
+	let k = document.getElementById("colvotry").innerText ="Осталось попыток " + kolvo_try;
+	
 	let n = document.getElementById("kol_vo").value;
 
 	generateTable(n,n);
@@ -60,7 +63,7 @@ function generateTable(row, column){
 	console.log(present_tabs);
 }
 
-let kolvo_try = 3;
+
 
 function checkPrize(e){
 	if (kolvo_try <= 0) {
