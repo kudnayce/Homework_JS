@@ -31,7 +31,7 @@ let kolvo_try = 3;
 function result_4() {
 	kolvo_try = 3;
 	let k = document.getElementById("colvotry").innerText ="Осталось попыток " + kolvo_try;
-	
+
 	let n = document.getElementById("kol_vo").value;
 
 	generateTable(n,n);
@@ -63,12 +63,15 @@ function generateTable(row, column){
 	console.log(present_tabs);
 }
 
-
-
 function checkPrize(e){
 	if (kolvo_try <= 0) {
 		return;
 	}
+
+	if (this.style.background === "green"||this.style.background === "black") {
+		return;
+	}
+
 	kolvo_try = kolvo_try -1;
 	let k = document.getElementById("colvotry").innerText ="Осталось попыток " + kolvo_try;
 	console.log(k);
