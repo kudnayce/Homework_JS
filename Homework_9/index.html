@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+	<script src="work_graph.js"></script>
+	<link rel="stylesheet" href="style_4.css">
+</head>
+<body>
+
+1. Написать свою подключаемую js библиотеку для работы с массивом, хранящим целые числа.
+Библиотека должна обладать следующими методами:
+- поиск минимального элемента в переданном массиве;
+- поиск максимально элемента в переданном массиве;
+- расчет среднего арифметического значения элементов переданного массива;
+- создание копии (клонирование) переданного массива.
+<br><br>
+<label>Введите массив через запятую (пример: 1,2,3,4,5) <input type="text" id="arr_1"> </label>
+<button onclick="result_task_1()">Результат</button>
+<br><br>
+2. Подключить стороннюю библиотеку для построения графиков.
+Построить график функции y = f(x):
+y = 5/x, при x>=1;
+y = x*x – 4*x, при x<1.
+
+<div id="graph">
+
+</div>
+<script>
+	let lgr = {
+		x: [],
+		y: [],
+
+	},a;
+	for (let i = -5; i < 5; i = i+0.01) {
+		lgr.x.push(i);
+		lgr.y.push(work_graph.res_X(i));
+	}
+	Plotly.newPlot('graph', [lgr])
+</script>
+
+<br><br>
+<pre>Написать функцию генерации поля n x n (значение n - аргумент функции),
+в ячейки рандомно спрятать несколько призов.
+Пользователю дается 3 попытки найти их - по нажатию на ячейку либо открывается приз
+(иконка, изменения цвета и тд), либо иконка, сообщающая, что приза нет.
+Количество оставшихся попыток выводим рядом с игровым полем.</pre>
+
+<label> Количество: <input type="text" id="kol_vo"></label>
+<label> <input type="button" value="Заполнить" onclick="result_4()"> </label>
+<label> <p id="colvotry"></p></label>
+<div class="game_field">
+	<div id="table">
+	</div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="working_with_array.js"></script>
+</body>
+</html>
